@@ -1,0 +1,28 @@
+:root {
+  /* ## Colors */
+  --orange-red: #FF4500;
+  --charcoal-black: #1C1C1C;
+  --white: #FFFFFF;
+  --light-grayish-blue: #B0BEC5;
+  --golden-yellow: #FFD700;
+
+  /* ## Fonts */
+  --font-: "Roboto", sans-serif;
+}
+
+* {
+  font-family: var(--font-);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--charcoal-black);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange-red);
+}
