@@ -11,18 +11,126 @@
 }
 
 * {
-  font-family: var(--font-);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-);
 }
 
 body {
   background-color: var(--charcoal-black);
   color: var(--white);
+  margin: 1.5em 0 2em;
+}
+
+#navbar h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+#navbar form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+#navbar input {
+  font-family: var(--font-);
+  width: 210px;
+  padding: .5em;
+  border-radius: .5em;
+  outline: none;
+  border: none;
+}
+
+#navbar button {
+  background-color: var(--orange-red);
+  color: var(--charcoal-black);
+  padding: .5em;
+  border: none;
+  border-radius: 50%;
 }
 
 a {
   text-decoration: none;
   color: var(--orange-red);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: .5em;
+  text-transform: up;
+}
+
+.movies-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3em;
+}
+
+.movie-card {
+  max-width: 250px;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: .5em;
+  margin-bottom: .5em;
+}
+
+.movie-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: .5em;
+}
+
+.movie-card p {
+  display: flex;
+  gap: .5em;
+  color: var(--light-grayish-blue);
+  margin-bottom: 1em;
+}
+
+.movie-card a {
+  display: block;
+  background-color: var(--orange-red);
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+@media screen and (min-width: 376px) {
+  #navbar h2 {
+    font-size: 3rem;
+  }
+
+  #navbar input {
+    width: 600px;
+    padding: .75em;
+  }
+
+  #nabvar button {
+    padding: .75em;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1em;
+  }
+
+  .movies-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
